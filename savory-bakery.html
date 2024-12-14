@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savory Bakery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <box class="container">
+      <div class="main-box">
+        <header>
+          <p class="logo">Bakery<span>ZZZ</span></p>
+          <div class="navs">
+            <a href="index.html">
+              <button>Sweet</button>
+            </a>
+            <a href="savory-bakery.html">
+              <button class="active">Savory</button>
+            </a>
+            <a href="checkout.html" class="cart-link">
+              <img src="cart.svg" alt="Cart" class="cart-icon" /><span
+                class="badge"
+                id="cart-badge"
+                >0</span
+              ></a
+            >
+          </div>
+        </header>
+        <section>
+          <p class="overlay">Savory</p>
+          <div class="carousel">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-card">
+                  <img src="savory/m.png" />
+                </div>
+                <button
+                  data-name="Cheese and Spinach Pastry"
+                  data-price="5"
+                  onclick="addToCart(event)"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-card">
+                  <img src="savory/sa.png" />
+                </div>
+                <button
+                  data-name="Spinach and Mushroom Pie"
+                  data-price="6"
+                  onclick="addToCart(event)"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-card">
+                  <img src="savory/s.png" />
+                </div>
+                <button
+                  data-name="Cheese and Herb Scones"
+                  data-price="6"
+                  onclick="addToCart(event)"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+          </div>
+        </section>
+      </div>
+    </box>
+    <script src="script.js"></script>
+  </body>
+</html>
