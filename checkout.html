@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <box class="container">
+      <div class="main-box">
+        <header>
+          <p class="logo">Bakery<span>ZZZ</span></p>
+          <div class="navs">
+            <a href="index.html">
+              <button>Sweet</button>
+            </a>
+            <a href="savory-bakery.html">
+              <button>Savory</button>
+            </a>
+            <a href="checkout.html" class="cart-link">
+              <img src="cart.svg" alt="Cart" class="cart-icon" />
+              <span class="badge" id="cart-badge">0</span>
+            </a>
+          </div>
+        </header>
+        <section class="cart">
+          <p class="overlay">Checkout</p>
+          <div id="cart-details"></div>
+        </section>
+      </div>
+    </box>
+    <script src="checkout.js"></script>
+  </body>
+</html>
